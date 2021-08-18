@@ -1,0 +1,4 @@
+Model,Accuracy (%)
+RFC Base,99.46
+RFC (RFECV),99.3
+RFC (GSCV),99.3
