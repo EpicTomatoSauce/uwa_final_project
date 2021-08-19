@@ -56,7 +56,7 @@ var baseMaps = {
 // Create initial map object and set the starting longitude, latitude, zoom level and layers of the map
 var myMap = L.map("map", {
     center: [
-        -1.6, 34.59
+        -1.601, 34.589
     ],
     zoom: 15,
     layers: [satellitestreetsmap]
