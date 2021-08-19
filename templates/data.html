@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Final Project</title>
+  
+<!-- Bootstrap stylesheet link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- CSS stylesheet link -->
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+
+
+<body>
+  
+  <!-- Navbar content -->
+  <nav class="navbar navbar-expand-md navbar-light bg-white">    
+    <a class="navbar-brand flood" href="index.html">Flood Warning</a>             
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>       
+    <div class="collapse navbar-collapse flex-grow-1 text-right">              
+      <ul class="navbar-nav ml-auto">          
+        <li class="nav-item">
+          <a class="nav-link m-2 menu-item" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-2 menu-item" href="analysis.html">Analysis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-2 menu-item" href="map.html">Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-2 menu-item" href="data.html">Data</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Flood Warning System</h1>
+      </div>
+    </div>
+
+  <div class="container"> 
+    <table id="rawData" class="display" width="100%"></table>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div id="bubble"></div>
+    </div>
+  </div>
+<script>
+
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+<script src="./static/js/data.js"></script>
+<!-- install lodash -->
+<!-- https://www.newline.co/@morfsys/you-should-start-using-lodash-in-2020-and-heres-why--792500b0 -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+<script src="./static/js/app.js"></script> -->
+
+</body>
+</html>

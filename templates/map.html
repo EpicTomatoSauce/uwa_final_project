@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Final Project</title>
+  
+<!-- Bootstrap stylesheet link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- CSS stylesheet link -->
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+<!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin="" />
+  
+
+</head>
+<body>
+  
+  <!-- Navbar content -->
+  <nav class="navbar navbar-expand-md navbar-light bg-white">    
+    <a class="navbar-brand flood" href="index.html">Flood Warning</a>             
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>       
+    <div class="collapse navbar-collapse flex-grow-1 text-right">              
+      <ul class="navbar-nav ml-auto">          
+        <li class="nav-item">
+          <a class="nav-link m-2 menu-item" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-2 menu-item" href="analysis.html">Analysis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-2 menu-item" href="map.html">Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-2 menu-item" href="data.html">Data</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- The div that holds our map -->
+  <div id="map"></div>
+
+  <!-- Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin=""></script>
+  <!-- D3 JavaScript -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <!-- API key -->
+  <script type="text/javascript" src="../static/js/config.js"></script>
+  <!-- Our JavaScript -->
+  <script type="text/javascript" src="../static/js/logic.js"></script>
+ </body>
+</html>
