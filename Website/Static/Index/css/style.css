@@ -1,0 +1,59 @@
+body{
+    background-color: lightgrey;
+    font-family: 'Georgia', serif;
+}
+
+.navbar {
+    background-color: white;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.flood {
+    background-color: darkblue;
+    padding: 20px;
+    color: white !important;
+    font-weight: bold;
+}
+
+.box {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px; 
+}
+
+/* h3, h4 {
+    color: lightseagreen;
+    font-weight: bold;
+} */
+
+.body_text {
+    font-size: small;
+    color: black;
+    text-align: left; 
+}
+
+.active, .panel:hover{
+    border-color:#1b3146;
+    border-style: solid; 
+}
+
+.headings {
+    color: #1b3146;
+    font-weight: bold;
+    text-align: center;    
+}
+
+.table {
+    font-size: 10px; 
+    border-top-color: white !important;
+} 
+
+.temperature {
+    width: 50%;
+}
