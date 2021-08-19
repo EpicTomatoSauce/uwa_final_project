@@ -32,10 +32,46 @@ flood_data = pd.read_sql("SELECT * FROM rainfall_flood", conn)
 @app.route("/")
 def welcome():
     print("Server received request for 'Home' page...")
-    return (
+    return (f"Directories you can access <br/>"
         f"/api/flood_data<br/>"
-        f""
+        f"/about.html<br/>"
+        f"/analysis.html<br/>"
+        f"/data.html<br/>"
+        f"/index.html<br/>"
+        f"/map.html<br/>"
+        
     )
+
+#################################################
+# Website
+#################################################
+
+@app.route("/index.html")
+def index():
+    return render_template("index.html")
+
+@app.route("/about.html")
+def about():
+    return render_template("about.html")
+
+@app.route("/analysis.html")
+def analysis():
+    return render_template("analysis.html")
+
+@app.route("/data.html")
+def data():
+    return render_template("data.html")
+
+@app.route("/map.html")
+def map():
+    return render_template("map.html")
+
+
+#################################################
+# API
+#################################################
+
+
 
 @app.route("/api/flood_data")
 def api_1():
