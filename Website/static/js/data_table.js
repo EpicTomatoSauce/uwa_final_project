@@ -1,5 +1,6 @@
+
 // ----------------------------------------------------------------
-// Create a function to build and generate the data table for the Analysis HTML
+// Create a function to build and generate the data table for the data html
 // ----------------------------------------------------------------
 function loadData() {
     d3.json("/api/flood_data").then((dataSet) => {
