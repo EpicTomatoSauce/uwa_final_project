@@ -1,5 +1,5 @@
 # UWA Final Project - Group 3
-Environmental Data as a Predictor for Flooding Events in the NW of WA.
+Environmental Data as a Predictor for Flooding Events in the Serengeti.
 
 
 ![first_slide.jpg](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/first_slide.jpg)
@@ -121,7 +121,9 @@ In jupyter notebook applying the pandas library we read in the files, clean the 
 
 ![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/clean1.png)
 
-![chart](hhttps://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/clean2.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/clean1-1.PNG)
+
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/clean2.PNG)
 
 ## Machine Learning Models
 
