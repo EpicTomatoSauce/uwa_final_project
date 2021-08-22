@@ -2,7 +2,7 @@
 Environmental Data as a Predictor for Flooding Events in the NW of WA.
 
 
-![first_slide.jpg](https://github.com/EpicTomatoSauce/uwa_final_project/tree/main/Website/static/Images/first_slide.jpg)
+![first_slide.jpg](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/first_slide.jpg)
 
 An analysis of environmental data using machine learning models as a predictor for flooding events in the Serengeti to answer the following questions;
 
@@ -119,60 +119,60 @@ Placeholder
 
 In jupyter notebook applying the pandas library we read in the files, clean the data by renaming the columns and setting date type to dateime64. Concatenate the dataframes then adjusted the date format to what is required in preparation for the running the Machine Learning models.
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/tree/main/Website/static/Images/clean1.png)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/clean1.png)
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/tree/main/Website/static/Images/clean2.PNG)
+![chart](hhttps://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/clean2.PNG)
 
 ## Machine Learning Models
 
 Logistic Regression
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/tree/main/Website/static/Images/ML1.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/ML1.PNG)
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/tree/main/Website/static/Images/ML1-1.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/ML1-1.PNG)
 
 Random Forest
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/tree/main/Website/static/Images/randomforest.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/randomforest.PNG)
 
 ## Load - SQLite Database:
 
 Using the dataframes created in the jupyter notebook we applied the df.to_SQL to push the tables to the SQLite Database to store the raw data.
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/tree/main/Website/static/Images/placeholder)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/placeholder)
 
 
 ## Visualisations:
 
 All visualisations were created using a combination of Tableau, leaflet, and *** 
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/tree/main/Website/static/Images/tableau.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/tableau.PNG)
 
 Below is an overview of each html page;
 
 ### Index
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/tree/main/Website/static/Images/index.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/index.PNG)
 
 ### About
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/tree/main/Website/static/Images/placeholder)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/placeholder)
 
 ### Analysis
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/tree/main/Website/static/Images/placeholder)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/placeholder)
 
 ### Map
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/tree/main/Website/static/Images/placeholder)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/placeholder)
 
 ### Data
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/tree/main/Website/static/Images/placeholder)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/placeholder)
 
 ### Tableau Dashboard
 
-![chart](https://github.com/EpicTomatoSauce/Whisky_Discography/blob/main/code/static/image/dashboard.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/dashboard.PNG)
 
 
 ## Analysis:
