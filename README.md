@@ -34,6 +34,14 @@ UWA Final Project
 |       |__ css
 |	   |__ style.css
 |       |__ Images
+|	   |__ ML1-1.PNG
+|	   |__ ML1.PNG
+| 	   |__ clean1-1.PNG
+|	   |__ clean1.png
+|	   |__ dashboard.PNG
+|	   |__ first_slide.jpg
+|	   |__ index.PNG
+|	   |__ randomforest.PNG
 |	   |__ river.png
 |	   |__ serengeti_river.jpg
 |	   |__ serengeti_river_1.jpg
@@ -42,6 +50,7 @@ UWA Final Project
 |	   |__ serengeti_river_4.jpg
 |	   |__ serengeti_river_5.jpg
 |	   |__ serengeti_river_X.jpg
+|	   |__ tableau.PNG
 |       |__ js
 |	   |__ data.js
 |	   |__ logic.js
@@ -105,19 +114,23 @@ UWA Final Project
 
 ## Data Sources:
 
-Placeholder
+|Source|Link|
+|-|-|
+Tanzania Meteorological Authority |https://www.meteo.go.tz/|
 
 ## Datasets 
 
-Placeholder
-
-## Extract:
-
-Placeholder
+|No|Source|Link|
+|-|-|-|
+|1|Ca_Rainfall_20201103_090000_20210531_235959.csv|https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Data/Ca_Rainfall_20201103_090000_20210531_235959.csv|
+|2|Sy_Rainfall_20201103_090000_20210531_235959.csv|https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Data/Sy_Rainfall_20201103_090000_20210531_235959.csv|
+|3|Wa_Rainfall_20201103_090000_20210531_235959.csv|https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Data/Wa_Rainfall_20201103_090000_20210531_235959.csv|
+|4|Wo_Rainfall_20201103_090000_20210531_235959.csv|https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Data/Wo_Rainfall_20201103_090000_20210531_235959.csv|
+|5|Wa_Creek_Water_Level_20201103_090000_20210531_235959.csv|https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Data/Wa_Creek_Water_Level_20201103_090000_20210531_235959.csv|
 
 ## Transform:
 
-In jupyter notebook applying the pandas library we read in the files, clean the data by renaming the columns and setting date type to dateime64. Concatenate the dataframes then adjusted the date format to what is required in preparation for the running the Machine Learning models.
+In jupyter notebook applying the pandas library we read in the files, clean the data by renaming the columns and setting date type to datetime64. Concatenate the dataframes then adjusted the date format to what is required in preparation for the running the Machine Learning models.
 
 ![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/clean1.png)
 
@@ -137,16 +150,10 @@ Random Forest
 
 ![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/randomforest.PNG)
 
-## Load - SQLite Database:
-
-Using the dataframes created in the jupyter notebook we applied the df.to_SQL to push the tables to the SQLite Database to store the raw data.
-
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/placeholder)
-
 
 ## Visualisations:
 
-All visualisations were created using a combination of Tableau, leaflet, and *** 
+All visualisations were created using a combination of Tableau, leaflet, and D3.
 
 ![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/tableau.PNG)
 
