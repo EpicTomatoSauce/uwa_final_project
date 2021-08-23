@@ -28,7 +28,7 @@ header,
 .active,
 .tableauPlaceholder {
     width: 100%; 
-    height: 100%;
+    height: 91.2%;
 }
 
 .carousel-inner{
@@ -39,18 +39,6 @@ header,
 body,
 html {
   height: 100%;
-}
-
-.legend {
-  padding: 4px 4px;
-  border-radius: 3px;
-  background-color: white;
-  line-height: 20px;
-  color: black;
-  width: auto;
-  text-align: center;
-  font-size: 9px;
-  opacity: 0.8;
 }
 
 .leg {
@@ -79,10 +67,17 @@ img {
     padding: 20px; 
 }
 
-/* h3, h4 {
-    color: lightseagreen;
+h3, h4 {
+    color: white;
+    font-size: 50px;
     font-weight: bold;
-} */
+}
+
+h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold; 
+}
 
 .body_text {
     font-size: small;
