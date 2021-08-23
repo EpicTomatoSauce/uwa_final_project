@@ -94,8 +94,6 @@ def tableau():
 #Query from db
 flood_data = pd.read_sql("SELECT * FROM rainfall_flood", conn)
 
-
-
 @app.route("/api/flood_data")
 def flood_api():
     return jsonify((flood_data.to_dict()))

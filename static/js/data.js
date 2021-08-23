@@ -3,7 +3,7 @@
 // ----------------------------------------------------------------
 function loadData() {
     d3.json("/api/flood_data").then((dataSet) => {
-        // console.log(dataSet)
+        console.log(dataSet)
         $(document).ready(function() {
             $('#rawData').DataTable( {
                 data: dataSet,
