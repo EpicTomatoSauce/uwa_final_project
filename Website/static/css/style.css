@@ -54,6 +54,20 @@ img {
     height: auto;
 }
 
+.aboutheader {
+    color: darkblue;
+}
+
+.aboutsubheader {
+    text-align: center;
+    color: darkblue;
+}
+
+.about {
+    text-align: left;
+    color: darkblue;
+}
+
 .flood {
     background-color: darkblue;
     padding: 20px;
@@ -80,6 +94,7 @@ h4 {
 }
 
 
+
 .body_text {
     font-size: small;
     color: black;
@@ -90,12 +105,12 @@ h4 {
     border-color:#1b3146;
     border-style: solid; 
 }
-
+/* 
 .headings {
     color: #1b3146;
     font-weight: bold;
     text-align: center;    
-}
+} */
 
 .table {
     font-size: 10px; 
