@@ -54,23 +54,23 @@ def welcome():
 # Website
 #################################################
 
-@app.route("/index.html")
+@app.route("/index")
 def index():
     return render_template("index.html")
 
-@app.route("/about.html")
+@app.route("/about")
 def about():
     return render_template("about.html")
 
-@app.route("/analysis.html")
+@app.route("/analysis")
 def analysis():
     return render_template("analysis.html")
 
-@app.route("/data.html")
+@app.route("/data")
 def data():
     return render_template("data.html")
 
-@app.route("/map.html")
+@app.route("/map")
 def map():
     return render_template("map.html")
 
@@ -82,7 +82,7 @@ def home():
 def layout():
     return render_template("layout.html")
 
-@app.route("/tableau.html")
+@app.route("/tableau")
 def tableau():
     return render_template("tableau.html")
    
@@ -140,8 +140,8 @@ def preprocessDataAndPredict(sepal_length, sepal_width, petal_length, petal_widt
     #file = open("randomforest_model.pkl","rb")
     
     #load trained model
-    trained_model_log = joblib.load('ML_Models/logistic_reg.sav')
-    trained_model_rfc = joblib.load('ML_Models/rfc_reg.sav')
+    trained_model_log = joblib.load('../ML_Models/logistic_reg.sav')
+    trained_model_rfc = joblib.load('../ML_Models/rfc_reg.sav')
 
     #predict
     prediction_log = trained_model_log.predict(test_data)
