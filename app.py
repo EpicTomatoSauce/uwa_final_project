@@ -81,6 +81,10 @@ def home():
 @app.route("/layout")
 def layout():
     return render_template("layout.html")
+
+@app.route("/tableau.html")
+def tableau():
+    return render_template("tableau.html")
    
 
 
