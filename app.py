@@ -40,13 +40,12 @@ def welcome():
     print("Server received request for 'Home' page...")
     return (f"Directories you can access <br/>"
         f"/home<br/>"
-        f"/predict/<br/>"
         f"/api/flood_data<br/>"
-        f"/about.html<br/>"
-        f"/analysis.html<br/>"
-        f"/data.html<br/>"
-        f"/index.html<br/>"
-        f"/map.html<br/>"
+        f"/about<br/>"
+        f"/analysis<br/>"
+        f"/data<br/>"
+        f"/index<br/>"
+        f"/map<br/>"
         
     )
 
@@ -140,8 +139,8 @@ def preprocessDataAndPredict(sepal_length, sepal_width, petal_length, petal_widt
     #file = open("randomforest_model.pkl","rb")
     
     #load trained model
-    trained_model_log = joblib.load('../ML_Models/logistic_reg.sav')
-    trained_model_rfc = joblib.load('../ML_Models/rfc_reg.sav')
+    trained_model_log = joblib.load('ML_Models/logistic_reg.sav')
+    trained_model_rfc = joblib.load('ML_Models/rfc_reg.sav')
 
     #predict
     prediction_log = trained_model_log.predict(test_data)
