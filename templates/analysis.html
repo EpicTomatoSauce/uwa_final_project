@@ -19,7 +19,7 @@
 
   
   <!-- Navbar content -->
-  <nav class="navbar navbar-expand-md navbar-light bg-white">    
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top">      
     <a class="navbar-brand flood" href="index">Flood Warning</a>             
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -58,7 +58,7 @@
       <div class="thumbnail">
           <img src="{{url_for('static', filename='images/serengeti1.jpg')}}" class="img-thumbnail" />
           <div class="caption">
-               <p><strong>Tree</strong></p>
+               <p><strong>Serengeti Umbrella Tree</strong></p>
              </div>
       </div>
   </div>
@@ -66,7 +66,7 @@
       <div class="thumbnail">
           <img src="{{url_for('static', filename='images/serengeti2.jpg')}}" class="img-thumbnail" />
           <div class="caption">
-               <p><strong>Cheetah on log</strong></p>
+               <p><strong>Serengeti Cheetah</strong></p>
              </div>
       </div>
   </div>
@@ -74,7 +74,7 @@
       <div class="thumbnail">
           <img src="{{url_for('static', filename='images/serengeti3.jpg')}}" class="img-thumbnail" />
           <div class="caption">
-               <p><strong>Two Lions</strong></p>
+               <p><strong>Lion's Pride</strong></p>
              </div>
       </div>
   </div>
@@ -86,34 +86,34 @@
   <form class="form-horizontal" action = "/predict" method="post">
   
       <div class="form-group row">
-        <label class="control-label col-sm-2" for="sepal_length">Station 1 Rainfall (mm/30min):</label>
+        <label class="control-label col-sm-2" for="sepal_length">Station CA Rainfall (mm/30min):</label>
         <div class="col-sm-4">
           <!-- The input tag is html code where we generate test data for prediction -->
-          <input type="text" class="form-control" id="sepal_length" name="sepal_length">
+          <input type="text" class="form-control" id="sepal_length" name="sepal_length", value= "0.00">
         </div>
       </div>
       <br>
       
       <div class="form-group row">
-        <label class="control-label col-sm-2" for="sepal_width">Station 2 Rainfall (mm/30min):</label>
+        <label class="control-label col-sm-2" for="sepal_width">Station SY Rainfall (mm/30min):</label>
         <div class="col-sm-4">          
-          <input type="text" class="form-control" id="sepal_width" name="sepal_width">
+          <input type="text" class="form-control" id="sepal_width" name="sepal_width", value= "0.00">
         </div>
       </div>
       <br>
 
       <div class="form-group row">
-        <label class="control-label col-sm-2" for="petal_length">Station 3 Rainfall (mm/30min):</label>
+        <label class="control-label col-sm-2" for="petal_length">Station WA Rainfall (mm/30min):</label>
         <div class="col-sm-4">
-          <input type="text" class="form-control" id="petal_length" name="petal_length">
+          <input type="text" class="form-control" id="petal_length" name="petal_length", value= "0.00">
         </div>
       </div>
       <br>
       
       <div class="form-group row">
-        <label class="control-label col-sm-2" for="petal_width">Station 4 Rainfall (mm/30min):</label>
+        <label class="control-label col-sm-2" for="petal_width">Station WO Rainfall (mm/30min):</label>
         <div class="col-sm-4">          
-          <input type="text" class="form-control" id="petal_width" name="petal_width">
+          <input type="text" class="form-control" id="petal_width" name="petal_width", value= "0.00">
         </div>
       </div>
       <br>

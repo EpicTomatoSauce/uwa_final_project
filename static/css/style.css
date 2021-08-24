@@ -87,6 +87,11 @@ img {
     font-weight: bold;
 }
 
+.menu-item{
+    color: white !important;
+    font-weight: bold;
+}
+
 .box {
     background-color: white;
     font-family: Arial, sans-serif;
@@ -94,10 +99,10 @@ img {
 }
 
 h3 {
-    color: white;
+    color: darkblue;
     font-size: 50px;
     font-weight: bold;
-}
+} 
 
 h4 {
     color: white;
@@ -137,3 +142,31 @@ h2 {
 .temperature {
     width: 50%;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 5px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: darkblue;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: darkblue;
+}
+
+/* .padding {
+    object-fit: cover;
+} */
