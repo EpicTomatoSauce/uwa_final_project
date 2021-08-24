@@ -12,6 +12,8 @@ from sklearn.ensemble import RandomForestClassifier
 # from sklearn.externals import joblib
 import joblib
 from flask import Flask, jsonify, render_template, request
+import os
+
 
 #################################################
 # Database Setup
@@ -29,7 +31,7 @@ Base.prepare(engine, reflect=True)
 #################################################
 app = Flask(__name__)
 
-
+app.config['API_KEY'] = os.environ.get('API_KEY')
 #################################################
 # Flask Routes
 #################################################

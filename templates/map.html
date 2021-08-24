@@ -23,6 +23,10 @@
 
 <body>
   
+  <script>
+    var API_KEY = {{config['API_KEY']| tojson }}
+  </script>
+
   <!-- Navbar content -->
   <nav class="navbar navbar-expand-md navbar-light bg-white">    
     <a class="navbar-brand flood" href="index">Flood Warning</a>             
@@ -62,11 +66,13 @@
   <!-- D3 -->
   <script src="https://d3js.org/d3.v5.min.js"></script>
 
-  <!-- API key -->
-  <script type="text/javascript" src="../static/js/config.js"></script>
+  <!-- API key
+  <script type="text/javascript" src="../static/js/config.js"></script> -->
 
   <!-- Our JavaScript -->
   <script type="text/javascript" src="../static/js/logic.js"></script>
+
+  <!-- test -->
 
  </body>
 </html>
