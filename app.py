@@ -78,7 +78,7 @@ def tableau():
 # API/ Predict
 #################################################
 #Query from db
-flood_data = pd.read_sql("SELECT * FROM rainfall_flood", conn)
+flood_data = pd.read_sql("SELECT * FROM rainfall_flood LIMIT 100", conn)
 
 @app.route("/api/flood_data")
 def flood_api():
