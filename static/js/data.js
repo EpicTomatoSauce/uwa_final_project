@@ -8,6 +8,7 @@ function loadData() {
             $('#rawData').DataTable( {
                 data: dataSet,
                 columns: [
+                    { title: "Index" },
                     { title: "Datetime" },
                     { title: "CA Rainfall (mm)" },
                     { title: "SY Rainfall (mm)" },

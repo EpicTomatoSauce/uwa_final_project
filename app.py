@@ -96,10 +96,10 @@ flood_data = pd.read_sql("SELECT * FROM rainfall_flood", conn)
 
 @app.route("/api/flood_data")
 def flood_api():
-    return jsonify((flood_data.to_dict()))
+    return jsonify(flood_data.values.tolist())
 
 #POST is a method. There are send/request methods -> send data to our model api to perform prediction
-@app.route('/predict/', methods=['GET', 'POST']) 
+@app.route('/predict', methods=['GET', 'POST']) 
 def predict():
   
     if request.method == "POST":

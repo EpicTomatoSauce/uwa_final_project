@@ -45,39 +45,104 @@
     </div>
   </nav>
 
-  <br><br>
+  
+<br><br>
+
+      <!-- Starts image section -->
+<div class="row justify-content-md-center mb-4">
+  <h2 class='text-primary'>Prediction of flooding risk</h2>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+      <div class="thumbnail">
+          <img src="{{url_for('static', filename='images/serengeti1.jpg')}}" class="img-thumbnail" />
+          <div class="caption">
+               <p><strong>Tree</strong></p>
+             </div>
+      </div>
+  </div>
+  <div class="col-md-4">
+      <div class="thumbnail">
+          <img src="{{url_for('static', filename='images/serengeti2.jpg')}}" class="img-thumbnail" />
+          <div class="caption">
+               <p><strong>Cheetah on log</strong></p>
+             </div>
+      </div>
+  </div>
+  <div class="col-md-4">
+      <div class="thumbnail">
+          <img src="{{url_for('static', filename='images/serengeti3.jpg')}}" class="img-thumbnail" />
+          <div class="caption">
+               <p><strong>Two Lions</strong></p>
+             </div>
+      </div>
+  </div>
+</div>
+<!-- Ends image section -->
+
+<hr>
 
   <div class="row justify-content-md-center mb-4">
-    <h3 class='text-primary'>
-        Logistic Prediction is {{ prediction[0] }}
-        <br/>Random Forest Prediction is {{ prediction[1] }}<br/>
-    </h3>
-
-
+    <h4 class='text-primary'>
+        The logistic regression model provides a prediction of {{ prediction[0] }}
+        <br>
+        <br/>The random forest classifier model provides a prediction of {{ prediction[1] }}<br/>
+        <hr>
+        To re-test, fill out the form again.
+    </h4>
 </div>
 
-<div class="row justify-content-md-center">
-    <div class="thumbnail">
-        {% if prediction[0] == "Iris-setosa" %}
-            <img src="{{url_for('static', filename='images/images/serengeti1.jpg')}}" class="img-thumbnail" />
-        {% endif %}
-    </div>
-</div>
-    
-<div class="row justify-content-md-center">
-    <div class="thumbnail">
-        {% if prediction[0] == "Iris-versicolor" %}
-            <img src="{{url_for('static', filename='images/images/serengeti2.jpg')}}" class="img-thumbnail" />
-        {% endif %}
-    </div>
-</div>
+<!-- Starts form section -->
+<div class="form-container ">
+  <form class="form-horizontal" action = "/predict" method="post">
+  
+      <div class="form-group row">
+        <label class="control-label col-sm-2" for="sepal_length">Station 1 Rainfall (mm/30min):</label>
+        <div class="col-sm-4">
+          <!-- The input tag is html code where we generate test data for prediction -->
+          <input type="text" class="form-control" id="sepal_length" name="sepal_length">
+        </div>
+      </div>
+      <br>
+      
+      <div class="form-group row">
+        <label class="control-label col-sm-2" for="sepal_width">Station 2 Rainfall (mm/30min):</label>
+        <div class="col-sm-4">          
+          <input type="text" class="form-control" id="sepal_width" name="sepal_width">
+        </div>
+      </div>
+      <br>
 
-<div class="row justify-content-md-center">
-    <div class="thumbnail">
-        {% if prediction[0] == "Iris-virginica" %}
-            <img src="{{url_for('static', filename='images/serengeti3.jpg')}}" class="img-thumbnail" />
-        {% endif %}
-    </div>
+      <div class="form-group row">
+        <label class="control-label col-sm-2" for="petal_length">Station 3 Rainfall (mm/30min):</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="petal_length" name="petal_length">
+        </div>
+      </div>
+      <br>
+      
+      <div class="form-group row">
+        <label class="control-label col-sm-2" for="petal_width">Station 4 Rainfall (mm/30min):</label>
+        <div class="col-sm-4">          
+          <input type="text" class="form-control" id="petal_width" name="petal_width">
+        </div>
+      </div>
+      <br>
+      
+      <div class="form-group row"> 
+      <label class="control-label col-sm-2" for="">&nbsp;</label>                
+        <div class="col-sm-offset-2 col-sm-4">
+          <!-- event listener -->
+          <button type="submit" class="btn btn-primary">Predict</button>
+        </div>
+      </div>
+      <br>
+    </form>
+  <!-- Ends form section -->
+
+  <!--  Footer -->
+   <!-- D3 CDN -->
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
