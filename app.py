@@ -90,10 +90,10 @@ def predict():
   
     if request.method == "POST":
         #get form data
-        sepal_length = request.form.get('sepal_length')
-        sepal_width = request.form.get('sepal_width')
-        petal_length = request.form.get('petal_length')
-        petal_width = request.form.get('petal_width')
+        sepal_length = float(request.form.get('sepal_length'))
+        sepal_width = float(request.form.get('sepal_width'))
+        petal_length = float(request.form.get('petal_length'))
+        petal_width = float(request.form.get('petal_width'))
         
         #call preprocessDataAndPredict and pass inputs
         try:
