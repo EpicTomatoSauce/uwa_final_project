@@ -32,6 +32,7 @@ Base.prepare(engine, reflect=True)
 app = Flask(__name__)
 
 app.config['API_KEY'] = os.environ.get('API_KEY')
+print(os.environ.get('API_KEY'))
 #################################################
 # Flask Routes
 #################################################
@@ -80,7 +81,7 @@ def tableau():
 # API/ Predict
 #################################################
 #Query from db
-flood_data = pd.read_sql("SELECT * FROM rainfall_flood LIMIT 100", conn)
+flood_data = pd.read_sql("SELECT * FROM rainfall_flood", conn)
 
 @app.route("/api/flood_data")
 def flood_api():
