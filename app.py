@@ -34,25 +34,11 @@ app = Flask(__name__)
 # Flask Routes
 #################################################
 
-
-@app.route("/")
-def welcome():
-    print("Server received request for 'Home' page...")
-    return (f"Directories you can access <br/>"
-        f"/home<br/>"
-        f"/api/flood_data<br/>"
-        f"/about<br/>"
-        f"/analysis<br/>"
-        f"/data<br/>"
-        f"/index<br/>"
-        f"/map<br/>"
-        
-    )
-
 #################################################
 # Website
 #################################################
 
+@app.route("/")
 @app.route("/index")
 def index():
     return render_template("index.html")
