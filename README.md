@@ -2,7 +2,7 @@
 Environmental Data as a Predictor for Flooding Events in the Serengeti.
 
 
-![first_slide.jpg](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/first_slide.jpg)
+![first_slide.jpg](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/images/first_slide.jpg)
 
 An analysis of environmental data using machine learning models as a predictor for flooding events in the Serengeti to answer the following questions;
 
