@@ -147,56 +147,56 @@ Tanzania Meteorological Authority |https://www.meteo.go.tz/|
 
 In jupyter notebook applying the pandas library we read in the files, clean the data by renaming the columns and setting date type to datetime64. Concatenate the dataframes then adjusted the date format to what is required in preparation for the running the Machine Learning models.
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/clean1.png)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/images/clean1.png)
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/clean1-1.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/images/clean1-1.PNG)
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/clean2.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/images/clean2.PNG)
 
 ## Machine Learning Models
 
 Logistic Regression
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/ML1.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/images/ML1.PNG)
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/ML1-1.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/images/ML1-1.PNG)
 
 Random Forest
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/randomforest.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/images/randomforest.PNG)
 
 
 ## Visualisations:
 
 All visualisations were created using a combination of Tableau, leaflet, and D3.
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/tableau.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/images/tableau.PNG)
 
 Below is an overview of each html page;
 
 ### Index
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/index.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/images/index.PNG)
 
 ### About
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/about.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/images/about.PNG)
 
 ### Analysis
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/analysis.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/images/analysis.PNG)
 
 ### Map
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/map.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/images/map.PNG)
 
 ### Data
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/data.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/images/data.PNG)
 
 ### Tableau Dashboard
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/dashboard.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/images/dashboard.PNG)
 
 
 ## Deployment to Heroku:
