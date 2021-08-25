@@ -21,53 +21,67 @@ UWA Final Project
 |   |__ Wa_Rainfall_20201103_090000_20210531_235959.csv
 |   |__ Wo_Rainfall_20201103_090000_20210531_235959.csv
 |   |__ Wa_Creek_Water_Level_20201103_090000_20210531_235959.csv
+|   |__ combined_rainfall_water_level_data_20201103-20210531.csv
 |   |__ station_locations.csv 
 |
-|__ ML_Models
+|__ ML_Models/
 |   |__ RandomForest.sav
 |   |__ RandomForest_Evaluations.csv
 |   |__ RegressionModel.sav
 |   |__ RegressionModel_Evaluations.csv
+|   |__ logistic_reg.sav
+|   |__ rfc_reg.sav
 |
-|__ Website
-|   |__ Static
-|       |__ css
-|	   |__ style.css
-|       |__ Images
-|	   |__ ML1-1.PNG
-|	   |__ ML1.PNG
-| 	   |__ clean1-1.PNG
-|	   |__ clean1.png
-|	   |__ dashboard.PNG
-|	   |__ first_slide.jpg
-|	   |__ index.PNG
-|	   |__ randomforest.PNG
-|	   |__ river.png
-|	   |__ serengeti_river.jpg
-|	   |__ serengeti_river_1.jpg
-|	   |__ serengeti_river_2.jpg
-|	   |__ serengeti_river_3.jpg
-|	   |__ serengeti_river_4.jpg
-|	   |__ serengeti_river_5.jpg
-|	   |__ serengeti_river_X.jpg
-|	   |__ tableau.PNG
-|       |__ js
-|	   |__ data.js
-|	   |__ logic.js
+|__ static/
+|   |__ css/
+|	|__ style.css
+|   |__ Images/
+|	|__ ML1-1.PNG
+|	|__ ML1.PNG
+| 	|__ clean1-1.PNG
+|	|__ clean1.png
+|	|__ clean2.PNG
+|	|__ dashboard.PNG
+|	|__ first_slide.jpg
+|	|__ index.PNG
+|	|__ randomforest.PNG
+|	|__ river.png
+|	|__ serengeti1.jpg
+|	|__ serengeti2.jpg
+|	|__ serengeti3.jpg
+|	|__ serengeti_river.jpg
+|	|__ serengeti_river_1.jpg
+|	|__ serengeti_river_2.jpg
+|	|__ serengeti_river_3.jpg
+|	|__ serengeti_river_4.jpg
+|	|__ serengeti_river_5.jpg
+|	|__ serengeti_river_X.jpg
+|	|__ tableau.PNG
+|    |__ js/
+|	|__ data.js
+|	|__ logic.js
+|	|__ predict.js
 |
-|   |__ templates
-|      |__ about.html
-|      |__ analysis.html
-|      |__ data.html
-|      |__ index.html
-|      |__ map.html
-|      |__ tableau.html
+|__ templates/
+|   |__ about.html
+|   |__ analysis.html
+|   |__ data.html
+|   |__ index.html
+|   |__ map.html
+|   |__ predict.html
+|   |__ tableau.html
 |
 |__ README.md
 |__ Rainfall and Water Level Around Mantaka Village.twbx
+|__ UWA Final Project.pptx
+|__ app.py
 |__ clean.ipynb
 |__ model_evaluations.ipynb
 |__ combined_rainfall_water_level_data_20201103-20210531.hyper
+|__ floodmain.sqlite
+|__ requirements.txt
+|__ runtime.txt
+|__ Procfile
 |__ station_locations.hyper
 |__ tableau_viz.twb
 
@@ -127,70 +141,62 @@ Tanzania Meteorological Authority |https://www.meteo.go.tz/|
 |3|Wa_Rainfall_20201103_090000_20210531_235959.csv|https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Data/Wa_Rainfall_20201103_090000_20210531_235959.csv|
 |4|Wo_Rainfall_20201103_090000_20210531_235959.csv|https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Data/Wo_Rainfall_20201103_090000_20210531_235959.csv|
 |5|Wa_Creek_Water_Level_20201103_090000_20210531_235959.csv|https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Data/Wa_Creek_Water_Level_20201103_090000_20210531_235959.csv|
+|6|combined_rainfall_water_level_data_20201103-20210531.csv|https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Data/combined_rainfall_water_level_data_20201103-20210531.csv|
 
 ## Transform:
 
 In jupyter notebook applying the pandas library we read in the files, clean the data by renaming the columns and setting date type to datetime64. Concatenate the dataframes then adjusted the date format to what is required in preparation for the running the Machine Learning models.
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/clean1.png)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/clean1.png)
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/clean1-1.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/clean1-1.PNG)
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/clean2.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/clean2.PNG)
 
 ## Machine Learning Models
 
 Logistic Regression
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/ML1.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/ML1.PNG)
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/ML1-1.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/ML1-1.PNG)
 
 Random Forest
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/randomforest.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/randomforest.PNG)
 
 
 ## Visualisations:
 
 All visualisations were created using a combination of Tableau, leaflet, and D3.
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/tableau.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/tableau.PNG)
 
 Below is an overview of each html page;
 
 ### Index
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/index.PNG)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/index.PNG)
 
 ### About
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/placeholder)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/about.PNG)
 
 ### Analysis
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/placeholder)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/analysis.PNG)
 
 ### Map
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/placeholder)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/map.PNG)
 
 ### Data
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/placeholder)
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/data.PNG)
 
 ### Tableau Dashboard
 
-![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/Website/static/Images/dashboard.PNG)
-
-
-## Analysis:
-
-Placeholder
-
-* Placeholder
-* Placeholder
-* Placeholder
+![chart](https://github.com/EpicTomatoSauce/uwa_final_project/blob/main/static/Images/dashboard.PNG)
 
 
 ## Deployment to Heroku:
