@@ -1,3 +1,6 @@
+# Quick Heroku Deployment
+[Flood Warning System](https://rainfall-in-serengeti.herokuapp.com/)
+
 # UWA Final Project - Group 3
 Environmental Data as a Predictor for Flooding Events in the Serengeti.
 
