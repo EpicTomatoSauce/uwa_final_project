@@ -170,3 +170,20 @@ h2 {
 /* .padding {
     object-fit: cover;
 } */
+
+.jumbotron {
+     background: grey; 
+}
+
+.form-container {
+    margin: auto;
+    width: 50%;
+    border: 3px solid orange;
+    padding: 10px;
+    background-color: white;
+}
+
+.thumbnail {
+    /* border: 3px solid orange; */
+}
+
