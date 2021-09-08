@@ -172,7 +172,8 @@ h2 {
 } */
 
 .jumbotron {
-     background: grey; 
+     background: grey;
+     border: 3px solid orange;  
 }
 
 .form-container {
